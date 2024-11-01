@@ -12,46 +12,100 @@ body {
     line-height: 1.6;
 }
 
-/* Huvudproduktsektion */
-.product-page {
+/* Navigationsmeny */
+.navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 3rem;
+    padding: 1rem 2rem;
     background-color: #ffffff;
-    margin: 2rem auto;
-    max-width: 1000px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.product-image img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 8px;
-}
-
-.product-details {
-    max-width: 500px;
-    padding-left: 2rem;
-}
-
-.product-details h1 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.price {
+.logo {
     font-size: 1.5rem;
+    color: #ff69b4;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
     color: #ff1493;
-    margin-top: 0.5rem;
+}
+
+/* Hero-sektion */
+.hero-section {
+    background-color: #ffe0f0;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    color: #ff1493;
+}
+
+.hero-text p {
+    color: #666;
+    margin: 1rem 0;
+}
+
+.hero-button {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #ff1493;
+}
+
+/* Produktsektion */
+.product-section {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+}
+
+.product-card {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
     margin-bottom: 1rem;
 }
 
-.description {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1.5rem;
+.product-price {
+    color: #ff1493;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
 }
 
 .buy-button {
@@ -69,33 +123,34 @@ body {
     background-color: #ff1493;
 }
 
-/* Ytterligare produktinformation */
-.additional-info {
+/* Produktbeskrivningssektion */
+.product-info {
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
     background-color: #fefefe;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
-.additional-info h2 {
+.product-info h2 {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 1rem;
 }
 
-.additional-info p {
+.product-info p {
     color: #666;
     margin-bottom: 1rem;
 }
 
-.additional-info ul {
+.product-info ul {
     list-style: none;
     color: #666;
 }
 
-.additional-info ul li {
+.product-info ul li {
     margin-bottom: 0.5rem;
 }
 
